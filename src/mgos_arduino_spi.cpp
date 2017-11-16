@@ -44,6 +44,10 @@ void SPIImpl::setFrequency(uint32_t freq) {
   txn_.freq = freq;
 }
 
+void SPIImpl::setClockDivider(uint32_t clockDiv) {
+  printf("Trying to set clockDiv to %d\n", clockDiv);
+}
+
 void SPIImpl::beginTransaction(SPISettings settings) {
   setFrequency(settings.clock);
   setBitOrder(settings.bit_order);

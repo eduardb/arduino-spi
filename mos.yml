@@ -1,15 +1,16 @@
-author: mongoose-os
-description: Arduino SPI library
+author: eduardb
+description: Arduino SPI library for ESP8266
 type: lib
-version: 1.0
+version: 0.1
+
+platforms: [ esp8266 ]
 
 sources:
   - src
 includes:
   - include
 libs:
-  - origin: https://github.com/mongoose-os-libs/arduino-compat
-  - origin: https://github.com/mongoose-os-libs/spi
+  - origin: https://github.com/eduardb/arduino-compat
 
 tags:
   - arduino
